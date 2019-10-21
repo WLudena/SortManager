@@ -37,5 +37,5 @@ public class QuickSorter implements Sorter{
     }
 
     @Override
-    public String toString(){ return "Bubble Sorter";}
+    public String toString(){ return "Quick sorter";}
 }

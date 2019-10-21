@@ -4,12 +4,12 @@ import java.util.Random;
 
 public class RandomArrayGenerator {
 
-    private Random rand = new Random();
-
-    public int[] randomArray(int length){
+    public static int[] randomArray(int length){
+        Random rand = new Random();
         int[] array = new int[length];
+
         for(int i = 0; i < length; i++){
-            array[i] = rand.nextInt(1000);
+            array[i] = rand.nextInt(length*10)+1;
         }
         return array;
     }

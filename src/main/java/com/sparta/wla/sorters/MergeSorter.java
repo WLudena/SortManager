@@ -4,9 +4,11 @@ import java.util.Arrays;
 
 public class MergeSorter implements Sorter{
 
+    private boolean initialPass;
+
     public int[] getSortedArray(int[] array) {
         if (array.length > 1) {
-            int[] leftSide = Arrays.copyOfRange(array, 0, array.length / 2);
+            int[] leftSide = Arrays.copyOfRange(array, 0, array.length/ 2);
             int[] rightSide = Arrays.copyOfRange(array, array.length / 2, array.length);
             getSortedArray(leftSide);
             getSortedArray(rightSide);
