@@ -7,5 +7,6 @@ public class Starter {
     {
         Display display = new Display();
         display.menu();
+        System.out.println("Testing");
     }
 }
