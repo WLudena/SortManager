@@ -3,15 +3,12 @@ package com.sparta.wla.manager;
 import com.sparta.wla.display.Display;
 import com.sparta.wla.sorters.*;
 
-import java.util.Arrays;
-import java.util.Scanner;
-
 public class SortManager {
 
 
-    public void sortArray(String sortType){
+    public void sortArray(){
         int[] unsortedArray = createArray(20);
-        Sorter sorter = SortFactory.getInstance(sortType);
+        Sorter sorter = SortFactory.getInstance();
         int[] sortedArray = sorter.getSortedArray(unsortedArray.clone());
         displaySortedArray(unsortedArray, sortedArray, sorter.toString());
     }
