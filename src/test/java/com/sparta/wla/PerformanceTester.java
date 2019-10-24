@@ -1,8 +1,6 @@
 package com.sparta.wla;
 
-import com.sparta.wla.sorters.BubbleSorter;
-import com.sparta.wla.sorters.RandomArrayGenerator;
-import com.sparta.wla.sorters.Sorter;
+import com.sparta.wla.sorters.*;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -18,7 +16,7 @@ public class PerformanceTester {
     @BeforeClass
     public static void clasSetUp(){
         RandomArrayGenerator random = new RandomArrayGenerator();
-        arrayToSort = random.randomArray(10000);
+        arrayToSort = random.randomArray(100000);
     }
 
     @Before
@@ -27,9 +25,29 @@ public class PerformanceTester {
     }
 
     @Test
-    public void testBubbleSorter(){
+    public void testBubbleSort(){
         System.out.println("*****" + Arrays.toString(unsortedArray));
         Sorter sorter = new BubbleSorter();
+        long start = System.nanoTime();
+        int[] sortedArray = sorter.getSortedArray(unsortedArray);
+        long end = System.nanoTime();
+        printResult(sorter.toString(),end-start,sortedArray);
+    }
+
+    @Test
+    public void testMergeSort(){
+        System.out.println("*****" + Arrays.toString(unsortedArray));
+        Sorter sorter = new MergeSorter();
+        long start = System.nanoTime();
+        int[] sortedArray = sorter.getSortedArray(unsortedArray);
+        long end = System.nanoTime();
+        printResult(sorter.toString(),end-start,sortedArray);
+    }
+
+    @Test
+    public void testQuickSort(){
+        System.out.println("*****" + Arrays.toString(unsortedArray));
+        Sorter sorter = new QuickSorter();
         long start = System.nanoTime();
         int[] sortedArray = sorter.getSortedArray(unsortedArray);
         long end = System.nanoTime();
