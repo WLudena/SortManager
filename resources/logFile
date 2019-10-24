@@ -1,0 +1,27 @@
+24-10-2019 11:09:50 TRACE [main] Starter - Logging initialised
+24-10-2019 11:09:50 TRACE [main] LoggingManager - Message set
+24-10-2019 11:09:50 DEBUG [main] LoggingManager - Message Printed - Blah blah blah
+24-10-2019 11:10:13 TRACE [main] Starter - Logging initialised
+24-10-2019 11:10:13 TRACE [main] LoggingManager - Message set
+24-10-2019 11:10:13 DEBUG [main] LoggingManager - Message Printed - Blah blah blah
+24-10-2019 11:10:30 TRACE [main] Starter - Logging initialised
+24-10-2019 11:10:30 TRACE [main] LoggingManager - Message set
+24-10-2019 11:10:30 DEBUG [main] LoggingManager - Message Printed - Blah blah blah
+24-10-2019 11:25:51 TRACE [main] Starter - Logging initialised
+24-10-2019 11:25:51 TRACE [main] LoggingManager - Message set
+24-10-2019 11:25:51 DEBUG [main] LoggingManager - Message Printed - Blah blah blah
+24-10-2019 11:35:22 TRACE [main] Starter - Logging initialised
+24-10-2019 11:35:22 TRACE [main] LoggingManager - Test message
+24-10-2019 12:14:20 TRACE [main] Starter - Logging initialised
+24-10-2019 12:14:20 TRACE [main] LoggingManager - Message set
+24-10-2019 12:14:20 DEBUG [main] LoggingManager - Message Printed - Blah blah blah
+24-10-2019 12:16:28 DEBUG [main] LoggingManager - Message Printed - Blah blah blah
+24-10-2019 12:17:00 TRACE [main] Starter - Logging initialised
+24-10-2019 12:17:00 TRACE [main] LoggingManager - Message set
+24-10-2019 12:17:00 DEBUG [main] LoggingManager - Message Printed - Blah blah blah
+24-10-2019 12:19:06 DEBUG [main] Starter - Logging initialised
+24-10-2019 12:19:06 TRACE [main] LoggingManager - Message set
+24-10-2019 12:19:06 DEBUG [main] LoggingManager - Message Printed - Blah blah blah
+24-10-2019 12:19:31 DEBUG [main] Starter - Logging initialised
+24-10-2019 12:19:31 DEBUG [main] LoggingManager - Message set
+24-10-2019 12:19:31 DEBUG [main] LoggingManager - Message Printed - Blah blah blah

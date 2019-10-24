@@ -7,6 +7,7 @@ import com.sparta.wla.sorters.Sorter;
 
 import java.io.FileReader;
 import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
 import java.util.Properties;
 
 public class SortFactory {
@@ -21,12 +22,13 @@ public class SortFactory {
             properties.load(new FileReader(PATH));
             sortType = properties.getProperty(KEY);
             Class selectedSorter = Class.forName(sortType);
-            return selectedSorter.getDeclaredConstructor().newInstance();
+            return (Sorter)selectedSorter.getDeclaredConstructor().newInstance();
 
-        }catch (IOException e){
+        }catch (IOException | ClassNotFoundException | NoSuchMethodException | InstantiationException | IllegalAccessException | InvocationTargetException e){
             System.out.println("Path not found!");
-            e.printStackTrace();
+            return new MergeSorter();
+        } finally{
+            //ensures certain code always runs if not reached in try statement
         }
-        return null;
     }
 }

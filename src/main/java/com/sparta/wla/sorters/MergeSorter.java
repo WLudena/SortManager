@@ -21,14 +21,7 @@ public class MergeSorter implements Sorter{
         int iLeft = 0, iRight = 0, iMerged = 0;
 
         while(iLeft < leftSide.length && iRight < rightSide.length){
-            if(leftSide[iLeft] > rightSide[iRight]){
-                array[iMerged] = rightSide[iRight];
-                iRight++;
-            }else{
-                array[iMerged] = leftSide[iLeft];
-                iLeft++;
-            }
-            iMerged++;
+            array[iMerged++] = leftSide[iLeft] < rightSide[iRight] ? leftSide[iLeft++] : rightSide[iRight++];
         }
         System.arraycopy(leftSide,iLeft,array,iMerged,leftSide.length-iLeft);
         System.arraycopy(rightSide,iRight,array,iMerged,rightSide.length-iRight);

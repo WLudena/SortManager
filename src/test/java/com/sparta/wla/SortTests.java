@@ -30,10 +30,6 @@ public class SortTests
         Arrays.sort(arrayToSort);
 
         assertArrayEquals(sortedArray, arrayToSort);
-//
-//        for(int i = 0; i < sortedArray.length - 1; i++){
-//            assertTrue(sortedArray[i] <= sortedArray[i+1]);
-//        }
     }
 
     @Test
@@ -68,7 +64,7 @@ public class SortTests
     }
 
     @Test
-    public void rightSortingUsed(){
+    public void testCorrectSortUsed(){
 
     }
 }
