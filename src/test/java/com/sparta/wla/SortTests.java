@@ -15,19 +15,18 @@ import java.util.Arrays;
 /**
  * Unit test for simple App.
  */
-public class SortTests
-{
+public class SortTests {
     private Sorter sorter;
     private int[] arrayToSort;
 
     @Before
-    public void setUp(){
+    public void setUp() {
         sorter = new BubbleSorter();
-        arrayToSort = new int[]{3,50,42,1,6,11,11,4};
+        arrayToSort = new int[]{3, 50, 42, 1, 6, 11, 11, 4};
     }
 
     @Test
-    public void testArraySorted(){
+    public void testArraySorted() {
         int[] sortedArray = sorter.getSortedArray(arrayToSort);
         Arrays.sort(arrayToSort);
 
@@ -35,45 +34,29 @@ public class SortTests
     }
 
     @Test
-    public void testArrayLength(){
+    public void testArrayLength() {
         int[] sortedArray = sorter.getSortedArray(arrayToSort);
-        assertEquals(sortedArray.length,arrayToSort.length);
+        assertEquals(sortedArray.length, arrayToSort.length);
     }
 
     @Test
-    public void testArrayIsNotEmpty(){
+    public void testArrayIsNotEmpty() {
         int[] sortedArray = sorter.getSortedArray(arrayToSort);
         assertFalse(sortedArray.length == 0);
     }
 
     @Test
-    public void testNoNegativeValues(){
+    public void testNoNegativeValues() {
         int[] sortedArray = sorter.getSortedArray(arrayToSort);
-        for(int i = 0; i < sortedArray.length; i++){
+        for (int i = 0; i < sortedArray.length; i++) {
             assertTrue(sortedArray[i] > 0);
         }
     }
 
     @Test
-    public void testBinaryTree(){
+    public void testBinaryTree() {
         sorter = new BinaryTreeSorter();
         System.out.println(Arrays.toString(sorter.getSortedArray(arrayToSort)));
         System.out.println(sorter.toString());
-    }
-
-    @Test
-    public void testDuplicateValues(){
-
-    }
-
-    @Test
-    public void testEmptyResult(){
-        int[] sortedArray = sorter.getSortedArray(arrayToSort);
-
-    }
-
-    @Test
-    public void testCorrectSortUsed(){
-
     }
 }

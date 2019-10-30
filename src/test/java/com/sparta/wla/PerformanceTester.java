@@ -1,5 +1,6 @@
 package com.sparta.wla;
 
+import com.sparta.wla.manager.RandomArrayGenerator;
 import com.sparta.wla.sorters.*;
 import org.junit.Before;
 import org.junit.BeforeClass;

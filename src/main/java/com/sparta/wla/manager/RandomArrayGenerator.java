@@ -1,4 +1,4 @@
-package com.sparta.wla.sorters;
+package com.sparta.wla.manager;
 
 import java.util.Random;
 
