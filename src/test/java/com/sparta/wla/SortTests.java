@@ -2,12 +2,14 @@ package com.sparta.wla;
 
 import static org.junit.Assert.*;
 
+import com.sparta.wla.sorters.BinaryTreeSorter;
 import com.sparta.wla.sorters.BubbleSorter;
 import com.sparta.wla.sorters.Sorter;
 import org.junit.Before;
 import org.junit.Test;
 
 import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
@@ -21,7 +23,7 @@ public class SortTests
     @Before
     public void setUp(){
         sorter = new BubbleSorter();
-        arrayToSort = new int[]{2, 4, 8, 34, 6, 23, 3, 6, 8};
+        arrayToSort = new int[]{3,50,42,1,6,11,11,4};
     }
 
     @Test
@@ -50,6 +52,13 @@ public class SortTests
         for(int i = 0; i < sortedArray.length; i++){
             assertTrue(sortedArray[i] > 0);
         }
+    }
+
+    @Test
+    public void testBinaryTree(){
+        sorter = new BinaryTreeSorter();
+        System.out.println(Arrays.toString(sorter.getSortedArray(arrayToSort)));
+        System.out.println(sorter.toString());
     }
 
     @Test

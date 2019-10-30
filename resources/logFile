@@ -25,3 +25,9 @@
 24-10-2019 12:19:31 DEBUG [main] Starter - Logging initialised
 24-10-2019 12:19:31 DEBUG [main] LoggingManager - Message set
 24-10-2019 12:19:31 DEBUG [main] LoggingManager - Message Printed - Blah blah blah
+30-10-2019 07:35:58 DEBUG [main] Starter - Logging initialised
+30-10-2019 07:35:58 DEBUG [main] LoggingManager - Message set
+30-10-2019 07:35:58 DEBUG [main] LoggingManager - Message Printed - Blah blah blah
+30-10-2019 11:14:30 DEBUG [main] Starter - Logging initialised
+30-10-2019 11:14:30 DEBUG [main] LoggingManager - Message set
+30-10-2019 11:14:30 DEBUG [main] LoggingManager - Message Printed - Blah blah blah
